@@ -5,6 +5,7 @@ import { FloatingNav } from "./components/ui/FloatingNav";
 import { FaHome } from "react-icons/fa";
 import Projects from "./components/Projects";
 import { FaWebAwesome } from "react-icons/fa6";
+import Skills from "./components/Skills";
 
 const Home = () => {
   return (
@@ -24,6 +25,7 @@ const Home = () => {
         <Hero />
         <Grid />
         <Projects />
+        <Skills />
       </div>
     </main>
   );
