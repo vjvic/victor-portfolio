@@ -3,6 +3,8 @@ import Hero from "./components/Hero";
 import Grid from "./components/Grid";
 import { FloatingNav } from "./components/ui/FloatingNav";
 import { FaHome } from "react-icons/fa";
+import Projects from "./components/Projects";
+import { FaWebAwesome } from "react-icons/fa6";
 
 const Home = () => {
   return (
@@ -13,10 +15,15 @@ const Home = () => {
     >
       <div className="max-w-7xl">
         <FloatingNav
-          navItems={[{ name: "Home", link: "/", icon: <FaHome /> }]}
+          navItems={[
+            { name: "Home", link: "/", icon: <FaHome /> },
+            { name: "Projects", link: "/projects", icon: <FaWebAwesome /> },
+            { name: "Experience", link: "/experience", icon: <FaHome /> },
+          ]}
         />
         <Hero />
         <Grid />
+        <Projects />
       </div>
     </main>
   );

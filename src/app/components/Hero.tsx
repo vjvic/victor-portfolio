@@ -40,7 +40,7 @@ const Hero = () => {
             words="Hi, I'm Victor I Build Interfaces That Users Love."
           />
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+          <p className="text-center md:tracking-wider mb-10 text-sm md:text-lg lg:text-2xl">
             Let’s Build Something Amazing Together!
           </p>
 
