@@ -8,7 +8,7 @@ const Skills = () => {
         My <span className="text-purple">Skills</span>
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10 ">
+      <div className="grid grid-cols-1 md:grid-cols-4  mt-10 ">
         {[
           { id: 1, title: "test" },
           { id: 2, title: "test" },
