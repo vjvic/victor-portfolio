@@ -44,7 +44,7 @@ const Hero = () => {
             Let’s Build Something Amazing Together!
           </p>
 
-          <a href="#about">
+          <a href="mailto:victorsulit0@gmail.com">
             <Button
               title="My Work :)"
               icon={<FaLocationArrow />}

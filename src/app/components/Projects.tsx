@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Projects = () => {
   return (
-    <div className="py-20">
+    <section className="py-20">
       <h2 className="heading">
         My <span className="text-purple">Projects</span>
       </h2>
@@ -69,7 +69,7 @@ const Projects = () => {
           </CardContainer>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
