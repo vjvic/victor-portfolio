@@ -6,7 +6,9 @@ import { BackgroundGradientAnimation } from "./BackgroundGradientAnimation";
 import Lottie from "react-lottie";
 import { IoCopyOutline } from "react-icons/io5";
 import Button from "./Button";
-import animationData from "@/data/confettie.json";
+import animationDataConfetti from "@/data/confettie.json";
+import animationDataTeamWork from "@/data/teamwork.json";
+import { Boxes } from "./Boxes";
 
 export const BentoGrid = ({
   className,
@@ -48,15 +50,21 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "Express", "Typescript"];
-  const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
-
   const [copied, setCopied] = useState(false);
 
-  const defaultOptions = {
+  const copyOptions = {
     loop: copied,
     autoplay: copied,
-    animationData: animationData,
+    animationData: animationDataConfetti,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+
+  const teamWorkOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationDataTeamWork,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },
@@ -128,35 +136,18 @@ export const BentoGridItem = ({
             {title}
           </div>
 
-          {id === 2 && <img src="/s.svg" alt="test" />}
+          {id === 5 && <Boxes />}
 
-          {id === 3 && (
-            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
-                {leftLists.map((item, i) => (
-                  <span
-                    key={i}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                  lg:opacity-100 rounded-lg text-center bg-[#10132E]"
-                  >
-                    {item}
-                  </span>
-                ))}
-                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
-              </div>
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
-                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
-                {rightLists.map((item, i) => (
-                  <span
-                    key={i}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                  lg:opacity-100 rounded-lg text-center bg-[#10132E]"
-                  >
-                    {item}
-                  </span>
-                ))}
-              </div>
-            </div>
+          {id === 1 && (
+            <img
+              src="/coding-about.svg"
+              alt="coding"
+              className="w-[300px] mx-auto mt-0  lg:mt-40"
+            />
+          )}
+
+          {id === 2 && (
+            <Lottie options={teamWorkOptions} height={250} width={400} />
           )}
 
           {id === 6 && (
@@ -166,7 +157,7 @@ export const BentoGridItem = ({
                   copied ? "block" : "block"
                 }`}
               >
-                <Lottie options={defaultOptions} height={200} width={400} />
+                <Lottie options={copyOptions} height={200} width={400} />
               </div>
 
               <Button

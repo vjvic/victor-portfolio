@@ -3,7 +3,7 @@ import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import Button from "./ui/Button";
-import { FaLocationArrow } from "react-icons/fa";
+import { FaLocationArrow, FaSmile } from "react-icons/fa";
 import animationData from "@/data/laptop.json";
 import Lottie from "react-lottie";
 import { BackgroundBeams } from "./ui/BackGroundBeams";
@@ -35,13 +35,8 @@ const Hero = () => {
             Let’s Build Something Amazing Together!
           </p>
 
-          <a href="mailto:victorsulit0@gmail.com">
-            <Button
-              title="My Work :)"
-              icon={<FaLocationArrow />}
-              position="right"
-              otherClass="w-[200px]"
-            />
+          <a href="about">
+            <Button title="About Me" otherClass="w-[200px]" />
           </a>
         </div>
 

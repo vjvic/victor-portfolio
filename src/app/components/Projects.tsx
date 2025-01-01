@@ -24,7 +24,7 @@ const Projects = () => {
                 translateZ="50"
                 className="text-xl font-bold text-neutral-600 dark:text-white"
               >
-                Make things float in air
+                AniVault
               </CardItem>
               <CardItem
                 as="p"

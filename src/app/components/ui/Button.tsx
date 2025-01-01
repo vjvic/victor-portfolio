@@ -7,9 +7,9 @@ const Button = ({
   handleClick,
   otherClass,
 }: {
-  title: string;
-  icon: React.ReactNode;
-  position: string;
+  title?: string;
+  icon?: React.ReactNode;
+  position?: string;
   handleClick?: () => void;
   otherClass?: string;
 }) => {
