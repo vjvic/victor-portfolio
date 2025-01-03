@@ -2,11 +2,6 @@ import React from "react";
 import { CardContainer, CardBody, CardItem } from "./ui/3dCard";
 import Image from "next/image";
 
-<<<<<<< HEAD
-const Projects = () => {
-  return (
-    <section className="py-20">
-=======
 const projectsData = [
   {
     id: 1,
@@ -28,21 +23,12 @@ const projectsData = [
 const Projects = () => {
   return (
     <section className="py-20" id="projects">
->>>>>>> master
       <h2 className="heading">
         My <span className="text-purple">Projects</span>
       </h2>
 
       <div className="flex flex-wrap items-center justify-center gap-5 lg:gap-20 mt-10">
-<<<<<<< HEAD
-        {[
-          { title: "hello", id: 1 },
-          { title: "hello", id: 2 },
-          { title: "hello", id: 3 },
-        ].map((item) => (
-=======
         {projectsData.map((item) => (
->>>>>>> master
           <CardContainer className="inter-var" key={item.id}>
             <CardBody
               className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1]
@@ -52,22 +38,14 @@ const Projects = () => {
                 translateZ="50"
                 className="text-xl font-bold text-neutral-600 dark:text-white"
               >
-<<<<<<< HEAD
-                AniVault
-=======
                 {item.title}
->>>>>>> master
               </CardItem>
               <CardItem
                 as="p"
                 translateZ="60"
                 className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
               >
-<<<<<<< HEAD
-                Hover over this card to unleash the power of CSS perspective
-=======
                 {item.desc}
->>>>>>> master
               </CardItem>
               <CardItem
                 translateZ="100"
@@ -76,11 +54,7 @@ const Projects = () => {
                 className="w-full mt-4"
               >
                 <Image
-<<<<<<< HEAD
-                  src="/s.svg"
-=======
                   src="/coding-about.svg"
->>>>>>> master
                   height="1000"
                   width="1000"
                   className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
@@ -94,11 +68,7 @@ const Projects = () => {
                   as="button"
                   className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
                 >
-<<<<<<< HEAD
-                  Try now →
-=======
                   Live site →
->>>>>>> master
                 </CardItem>
                 <CardItem
                   translateZ={20}
@@ -106,11 +76,7 @@ const Projects = () => {
                   as="button"
                   className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
                 >
-<<<<<<< HEAD
-                  Sign up
-=======
                   Github
->>>>>>> master
                 </CardItem>
               </div>
             </CardBody>
