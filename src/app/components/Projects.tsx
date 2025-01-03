@@ -26,8 +26,8 @@ const projectsData = [
     id: 3,
     title: "Portfolio",
     desc: `My Portfolio is a personal website built with Next.js, TypeScript, Tailwind CSS, and Aceternity UI. It showcases my work and projects, and I created it as part of my ongoing journey to improve my skills in web development and UI design.`,
-    githubLink: "https://github.com/vjvic/talk2translate/tree/main",
-    liveSite: "https://talk2translate.vercel.app/",
+    githubLink: "https://github.com/vjvic/victor-portfolio",
+    liveSite: "https://victor-portfolio-9v38wb6lo-vjvics-projects.vercel.app/",
     img: "/portfolio-project.png",
   },
 ];
