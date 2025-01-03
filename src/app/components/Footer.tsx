@@ -13,7 +13,11 @@ const Footer = () => {
         </p>
 
         <a href="mailto:victorsulit0@gmail.com" className="my-6">
+<<<<<<< HEAD
           <Button title="Say Hello 👋" otherClass="w-[200px]" />
+=======
+          <Button title="Say Hello 👋" otherClass="w-[150px]" />
+>>>>>>> master
         </a>
 
         <p className="md:text-base text-sm md:font-normal font-light">
