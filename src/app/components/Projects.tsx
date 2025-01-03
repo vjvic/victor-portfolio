@@ -9,17 +9,26 @@ const projectsData = [
     desc: `Anivault is an anime website built with JikanAPI, Next.js, TypeScript,Tailwind CSS, ShadCN, and React Query.
      It allows users to browse and track anime content with a clean, responsive design. I created this project
       to enhance my skills in frontend development and API integration.`,
+    githubLink: "https://github.com/vjvic/anivault ",
+    liveSite: "https://anivault-animesapp.vercel.app/ ",
+    img: "/anivault-project.png",
   },
   {
     id: 2,
     title: "Talk2Translate",
     desc: `Talk2Translate is a small voice translation app built with Next.js, TypeScript, Tailwind CSS, and the OpenAI API. 
     It provides real-time voice translations with a responsive design. I created this app as part of my learning journey to improve my skills in AI integration and web development.`,
+    githubLink: "https://github.com/vjvic/talk2translate/tree/main",
+    liveSite: "https://talk2translate.vercel.app/",
+    img: "/talk2translate-project.png",
   },
   {
     id: 3,
     title: "Portfolio",
     desc: `My Portfolio is a personal website built with Next.js, TypeScript, Tailwind CSS, and Aceternity UI. It showcases my work and projects, and I created it as part of my ongoing journey to improve my skills in web development and UI design.`,
+    githubLink: "https://github.com/vjvic/talk2translate/tree/main",
+    liveSite: "https://talk2translate.vercel.app/",
+    img: "/portfolio-project.png",
   },
 ];
 
@@ -57,7 +66,7 @@ const Projects = () => {
                 className="w-full mt-4"
               >
                 <Image
-                  src="/coding-about.svg"
+                  src={item.img}
                   height="1000"
                   width="1000"
                   className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
@@ -71,7 +80,7 @@ const Projects = () => {
                   as="button"
                   className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
                 >
-                  Live site →
+                  <a href={item.liveSite}>Live site →</a>
                 </CardItem>
                 <CardItem
                   translateZ={20}
@@ -79,7 +88,7 @@ const Projects = () => {
                   as="button"
                   className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
                 >
-                  Github
+                  <a href={item.githubLink}>Github</a>
                 </CardItem>
               </div>
             </CardBody>

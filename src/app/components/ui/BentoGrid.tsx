@@ -1,12 +1,9 @@
 "use client";
 
-import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./BackgroundGradientAnimation";
 import Lottie from "react-lottie";
-import { IoCopyOutline } from "react-icons/io5";
 import Button from "./Button";
-import animationDataConfetti from "@/data/confettie.json";
 import animationDataTeamWork from "@/data/teamwork.json";
 import { Boxes } from "./Boxes";
 import { SparklesCore } from "./Sparkles";
@@ -51,17 +48,6 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const [copied, setCopied] = useState(false);
-
-  const copyOptions = {
-    loop: copied,
-    autoplay: copied,
-    animationData: animationDataConfetti,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
-
   const teamWorkOptions = {
     loop: true,
     autoplay: true,
@@ -69,12 +55,6 @@ export const BentoGridItem = ({
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },
-  };
-
-  const handleCopy = () => {
-    const text = "victorsulit0@gmail.com";
-    navigator.clipboard.writeText(text);
-    setCopied(true);
   };
 
   return (
@@ -157,23 +137,9 @@ export const BentoGridItem = ({
           )}
 
           {id === 6 && (
-            <div className="mt-5 relative">
-              <div
-                className={`absolute -bottom-5 right-0 ${
-                  copied ? "block" : "block"
-                }`}
-              >
-                <Lottie options={copyOptions} height={200} width={400} />
-              </div>
-
-              <Button
-                title={copied ? "Email is Copied!" : "Copy my email address"}
-                icon={<IoCopyOutline />}
-                position="left"
-                handleClick={handleCopy}
-                otherClass="!bg-[#161A31]"
-              />
-            </div>
+            <a href="mailto:victorsulit0@gmail.com" className="my-6">
+              <Button title="Say Hello 👋" otherClass="w-[150px]" />
+            </a>
           )}
         </div>
       </div>
