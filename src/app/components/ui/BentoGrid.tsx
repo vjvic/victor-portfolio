@@ -9,10 +9,7 @@ import Button from "./Button";
 import animationDataConfetti from "@/data/confettie.json";
 import animationDataTeamWork from "@/data/teamwork.json";
 import { Boxes } from "./Boxes";
-<<<<<<< HEAD
-=======
 import { SparklesCore } from "./Sparkles";
->>>>>>> master
 
 export const BentoGrid = ({
   className,

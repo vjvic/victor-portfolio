@@ -6,17 +6,20 @@ const projectsData = [
   {
     id: 1,
     title: "Anivault",
-    desc: "Hover over this card to unleash the power of CSS perspective",
+    desc: `Anivault is an anime website built with JikanAPI, Next.js, TypeScript,Tailwind CSS, ShadCN, and React Query.
+     It allows users to browse and track anime content with a clean, responsive design. I created this project
+      to enhance my skills in frontend development and API integration.`,
   },
   {
     id: 2,
     title: "Talk2Translate",
-    desc: "Hover over this card to unleash the power of CSS perspective",
+    desc: `Talk2Translate is a small voice translation app built with Next.js, TypeScript, Tailwind CSS, and the OpenAI API. 
+    It provides real-time voice translations with a responsive design. I created this app as part of my learning journey to improve my skills in AI integration and web development.`,
   },
   {
     id: 3,
     title: "Portfolio",
-    desc: "Hover over this card to unleash the power of CSS perspective",
+    desc: `My Portfolio is a personal website built with Next.js, TypeScript, Tailwind CSS, and Aceternity UI. It showcases my work and projects, and I created it as part of my ongoing journey to improve my skills in web development and UI design.`,
   },
 ];
 

@@ -32,8 +32,8 @@ const Hero = () => {
             Let’s Build Something Amazing Together!
           </p>
 
-          <a href="#about">
-            <Button title="About Me" otherClass="w-[150px]" />
+          <a href="#about" className="w-[200px]">
+            <Button title="About Me" />
           </a>
         </div>
 
