@@ -10,7 +10,7 @@ This portfolio showcases my skills and projects as a frontend developer. Built u
 - Typescript
 - Tailwind CSS
 - Aceternity UI
--
+
 
 ## Key Features
 
@@ -37,7 +37,7 @@ https://github.com/vjvic/victor-portfolio.git
 2.  Navigate to project directory
 
 ```bash
-cd anivault
+cd victor-portfolio
 
 ```
 
